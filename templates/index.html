@@ -33,7 +33,7 @@
         
         <a href="{{ url_for('view_cart') }}" class="fas fa-shopping-cart"></a>
         <a class="fas fa-user" onclick="window.location.href='/login';"></a>
-        <a class="fas fa-user" onclick="window.location.href='/logout';"></a>
+        <a class="fas fa-sign-out-alt" onclick="window.location.href='/logout';"></a>
         <!-- <a href="" class="fas fa-user"></a> -->
     </div>
 
@@ -50,62 +50,66 @@
   <div class="slide-container active">
     <div class="slide">
         <div class="content">
-            <span>nike yellow shoes</span>
-            <h3>nike metcon shoes</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
-            <a href="#" class="btn">add to cart</a>
+            <!-- <span>nike yellow shoes</span> -->
+            <p>Sort Your Wardrobe For 2022!!</p>
+            <h3>Western Finds</h3>
+            <a href="{{ url_for('Dresses') }}" class="btn">Shop Now!!</a>
         </div>
         <div class="image">
-            <img src="../static/images/Dress.jpg" class="shoe" alt="">
+            <!-- <img src="../static/images/Dress.jpg" class="shoe" alt=""> -->
             
         </div>
     </div>
 </div>
 
-  <div class="slide-container">
-      <div class="slide">
-          <div class="content">
-              <span>nike red shoes</span>
-              <h3>nike metcon shoes</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
-              <a href="#" class="btn">add to cart</a>
-          </div>
-          <div class="image">
-              <img src="../static/images/stationary.jpg" class="shoe" alt="">
-              <!-- <img src="images/home-text-1.png" class="text" alt=""> -->
-          </div>
+<div class="slide-container">
+  <div class="slide">
+      <div class="content">
+          <!-- <span>nike yellow shoes</span> -->
+          <p>Gadgets and Tech Features</p>
+          <h3>World's Coolest<br> Tech Collections</h3>
+          <a href="{{ url_for('Gadgets') }}" class="btn">Shop Now!!</a>
+      </div>
+      <div class="image">
+          <!-- <img src="../static/images/Gadgets.jpg" class="shoe" alt=""> -->
+          <!-- <img src="images/home-text-3.png" class="text" alt=""> -->
       </div>
   </div>
+</div>
+
+ 
 
   <div class="slide-container">
       <div class="slide">
           <div class="content">
-              <span>nike blue shoes</span>
-              <h3>nike metcon shoes</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
-              <a href="#" class="btn">add to cart</a>
+              <!-- <span>nike blue shoes</span> -->
+              <p>Handcrafted Tablewear</p>
+              <h3>To Enchance Your<br> Dining Experience.</h3>
+              <a href="{{ url_for('Crockery') }}" class="btn">Shop Now!!</a>
           </div>
           <div class="image">
-              <img src="../static/images/crockery.jpg" class="shoe" alt="">
+              <!-- <img src="../static/images/Crockery.jpg" class="shoe" alt=""> -->
               <!-- <img src="images/home-text-2.png" class="text" alt=""> -->
           </div>
       </div>
   </div>
 
   <div class="slide-container">
-      <div class="slide">
-          <div class="content">
-              <span>nike yellow shoes</span>
-              <h3>nike metcon shoes</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis aut laboriosam earum dolorem iste atque.</p>
-              <a href="#" class="btn">add to cart</a>
-          </div>
-          <div class="image">
-              <img src="../static/images/Gadgets.jpg" class="shoe" alt="">
-              <!-- <img src="images/home-text-3.png" class="text" alt=""> -->
-          </div>
-      </div>
-  </div>
+    <div class="slide">
+        <div class="content">
+            <!-- <span>nike red shoes</span> -->
+            <p>One Stop <strong>SHOP!!</strong></p>
+            <h3>Get Early Bird Deals On<br> Our New Collections.</h3>
+            <a href="{{ url_for('School_items') }}" class="btn">Shop Now!!</a>
+        </div>
+        <div class="image">
+            <!-- <img src="../static/images/Stationary.jpg" class="shoe" alt=""> -->
+            <!-- <img src="images/home-text-1.png" class="text" alt=""> -->
+        </div>
+    </div>
+</div>
+
+  
 
   <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
   <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
@@ -154,7 +158,6 @@
     </div> -->
     <!-- <div>
       <button class="button" type="button" onclick="window.location.href='/signup';">Signup</button>
-
     </div> -->
     <!-- <div>
       <button class="button" type="button" onclick="window.location.href='/logout';">logout</button>
@@ -162,7 +165,6 @@
     
   <!-- </nav>
   
-
   </div>
   <div class="container">
   <div class="row">
@@ -206,14 +208,12 @@
     </div>
     <div class="text">
       <p>Shop at our mynth website  and get exicitng coupons...</p>
-
     </div>
       
       
         
       </div>
   </div>
-
 </div> -->
 
  
