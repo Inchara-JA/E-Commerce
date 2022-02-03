@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  /* background: url("/static/images/back.jpg") no-repeat center center fixed; */
+  /* background: url("/static/images/01.jpg") no-repeat center center fixed; */
   background-size: cover;
   /* margin: 0;
     padding: 0;
@@ -48,6 +48,7 @@ header .icons a{
   font-size: 1rem;
   color:var(--black);
   margin-left:1.5rem;
+  cursor: pointer;
 }
 
 header .icons a:hover{
@@ -211,14 +212,11 @@ header .icons a:hover{
   right:3rem;
 }
 
-.btn{
+.index{
   display: inline-block;
   margin-top: 3rem;
-  /* border-radius: .5rem; */
-  /* border:.2rem black; */
   font-weight:bold;
   font-size: 1.5rem;
-  /* color:var(--black); */
   cursor: pointer;
   background:none;
   padding:.6rem 1rem;
@@ -226,7 +224,7 @@ header .icons a:hover{
   margin-left: 10.5rem;
 }
 
-.btn:hover{
+.index:hover{
   background:var(--orange);
   color:rgb(252, 1, 1);
 }
@@ -239,36 +237,47 @@ header .icons a:hover{
 
 
 
-.row {
+
+.card .img{
+  width: 10rem;
+  height: 10rem;
+}
+
+.cards{
+  width: 10rem;
+  
+}
+
+
+ /* .row {
   margin: 5px 0;
-}
-/* .image {
-  width: 20rem;
-  height: 20rem;
-} */
-.pos {
+}  */
+.image {
+  width: 10rem;
+  height: 10rem;
+} 
+ /* .pos {
   margin-top: 10px;
-}
+} 
 .Cart-Container {
   width: 300px;
   border: 15px solid;
   padding: 50px;
   margin: 20px;
   background-color: white;
-}
-.button {
-  background-color: #4caf50; /* Green */
+} */
+/* .button {
+  background-color: #4caf50;  Green 
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-
   border-radius: 10px;
   margin-right: 2rem;
-}
-.login-box {
+} */
+/* .login-box {
   height: 50%;
   width: 30%;
   border: 1px solid grey;
@@ -281,7 +290,6 @@ header .icons a:hover{
 .login-header {
   text-align: center;
   font-size: 35px;
-
   background: linear-gradient(to bottom, #00bfff 0%, #0000ff 100%);
   position: relative;
   box-shadow: 1px 3px 14px rgba(0, 0, 0, 0.5);
@@ -290,7 +298,6 @@ header .icons a:hover{
   padding: 20px;
   line-height: 2;
 }
-
 .sign-box {
   height: 80%;
   width: 40%;
@@ -304,7 +311,6 @@ header .icons a:hover{
 .sign-header {
   text-align: center;
   font-size: 35px;
-
   background: linear-gradient(to bottom, #00bfff 0%, #0000ff 100%);
   position: relative;
   box-shadow: 1px 3px 14px rgba(0, 0, 0, 0.5);
@@ -312,30 +318,204 @@ header .icons a:hover{
 .sign-body {
   padding: 30px;
   line-height: 5;
-}
+} */
+
+
+
+
 
 .box {
-  margin-left: 5%;
-  margin-top: 5%;
+  width: 30rem;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #b6acac;
+  text-align: center;
 }
-.cart-one {
-  margin-left: 5%;
+
+.box h1 {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 400;
 }
+
+.box input[type="text"],
+.box input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 1.5px solid #000000;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  width: 280px;
+  border-color: rgb(143, 142, 142);
+}
+
+.box input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2e8dcc;
+  padding: 14px 40px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+  background: #2e8dcc;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sign-box {
+  width: 30rem;
+  padding: 40px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #b6acac;
+  text-align: center;
+}
+
+.sign-box h1 {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.sign-box input[type="text"],
+.sign-box input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 1.5px solid #000000;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.sign-box input[type="text"]:focus,
+.sign-box input[type="password"]:focus {
+  width: 280px;
+  border-color: rgb(143, 142, 142);
+}
+
+.sign-box input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2e8dcc;
+  padding: 14px 40px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.sign-box input[type="submit"]:hover {
+  background: #2e8dcc;
+}
+
+
+
+
+
+.signup-btn{
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 3rem;
+  border-radius: .5rem;
+  border:.2rem black;
+  font-weight:bold;
+  font-size: 1rem;
+  color:var(--black);
+  cursor: pointer;
+  background:none;
+  /* padding:.6rem 1rem; */
+  /* border-color: black; */
+  /* margin-left: 10.5rem; */
+}
+.signup-btn:hover{
+  /* background:var(--orange); */
+  /* color:rgb(1, 172, 252); */
+}
+
+.login{
+  display: inline-block;
+  font-weight:bold;
+  font-size: 1rem;
+  cursor: pointer;
+  background:none;
+  padding:.7rem 4.7rem;
+  border-radius: 1.3rem;
+  background-color: rgb(143, 142, 142);
+  border-color: rgb(102, 101, 101);
+  
+}
+
+.login:hover{
+  background:var(--orange);
+  color:rgb(77, 76, 76);
+}
+
 .row {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-.col-2 {
+} 
+
+ /* .box {
+  margin-left: 5%;
+  margin-top: 5%;
+} */
+/* .cart-one {
+  margin-left: 5%;
+} 
+ 
+ .col-2 {
   flex-basis: 50%;
   min-width: 300px;
-}
-.col-2 img {
+}  
+  .col-2 img {
   max-width: 100%;
   padding: 50px 0;
 }
-.ind {
+ .ind {
   margin-top: 5%;
 }
 .head {
@@ -350,14 +530,56 @@ header .icons a:hover{
   margin-bottom: 2%;
   width: 55%;
   height: 40%;
-}
-/* .text{
+} 
+ .text{
     position: relative;
     width:50%;
     height:50%;
     margin-left:85%;
     margin-bottom: 25%;
-} */
+}   */
+.dresses{
+  /* background: url("/static/images/01.jpg") no-repeat center center fixed; */
+  background-size: cover;
+}
+
+.container{
+  text-align: center;
+  
+}
+
+.row{
+  margin-top: 1rem;
+
+}
+
+.card{
+  margin-top: 2rem;
+  height: 22rem;
+  /* background-color: rgb(197, 179, 179); */
+  background: none;
+  /* border-color: rgb(209, 196, 196); */
+  border-radius:2rem;
+  box-shadow: 0 .5rem 1rem rgb(212, 200, 200);
+}
+
+.dresses-btn{
+  text-decoration: none;
+  display: inline-block;
+  /* margin-top: 3rem; */
+  border-radius: .5rem;
+  border:.2rem black;
+  font-weight:bold;
+  font-size: 1rem;
+  color:var(--black);
+  cursor: pointer;
+  background:none;
+}
+
+.card-text1{
+  margin-top: 1rem;
+  
+}
 
 
 /* media queries */
