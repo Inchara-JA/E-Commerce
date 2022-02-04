@@ -14,30 +14,21 @@
   <header>
 
     <div id="menu-bar" class="fas fa-bars"></div>
-
-    <!-- <a href="#" class="logo">nike</a> -->
-
     <nav class="navbar">
-      <!-- <a class="btn-primary" href="{{ url_for('signup') }}">Sign up</a> -->
-        <a href="{{ url_for('Dresses') }}">Dresses</a>
-        <a href="{{ url_for('Gadgets') }}">Gadgets</a>
-        <a href="{{ url_for('Crockery') }}">Crockery</a>
-        <a href="{{ url_for('School_items') }}">School Items</a>
-        <!-- <a href="#">View Cart</a> -->
+      <a href="{{ url_for('Dresses') }}">Dresses</a>
+      <a href="{{ url_for('Gadgets') }}">Gadgets</a>
+      <a href="{{ url_for('Crockery') }}">Crockery</a>
+      <a href="{{ url_for('School_items') }}">School Items</a>
     </nav>
 
     <div class="icons">
-        <!-- <a href="#" class="fas fa-heart"></a> -->
-        
-        <a href="{{ url_for('view_cart') }}" class="fas fa-shopping-cart"></a>
-        <a class="fas fa-user" onclick="window.location.href='/login';"></a>
-        <a class="fas fa-sign-out-alt" onclick="window.location.href='/logout';"></a>
-        <a class="fas fa-home" href="http://127.0.0.1:5000/" ></a>
-
-        <!-- <a href="" class="fas fa-user"></a> -->
+      <a href="{{ url_for('view_cart') }}" class="fas fa-shopping-cart"></a>
+      <a class="fas fa-user" onclick="window.location.href='/login';"></a>
+      <a class="fas fa-sign-out-alt" onclick="window.location.href='/logout';"></a>
+      <a class="fas fa-home" href="http://127.0.0.1:5000/"></a>
     </div>
 
-</header>
+  </header>
   <h1>Your order is </h1>
   <div class="row">
     {%for row in data %}
@@ -48,11 +39,6 @@
           <!-- <h5 class="card-title">{{row[0]}}</h5> -->
           <p class="card-text">{{row[1]}}</p>
           <p class="card-text"><span>Rupess:</span>₹{{row[2]}}</p>
-          <!-- <p class="card-text"><span>Stock Left:</span>{{row[4]}}</p> -->
-
-          <!-- <p id="qtn" class="card-text"><span>Quantity:</span>{{row[5]}}</p> -->
-
-
         </div>
       </div>
     </div>
